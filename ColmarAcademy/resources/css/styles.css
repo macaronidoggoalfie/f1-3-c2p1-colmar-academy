@@ -1,0 +1,640 @@
+body {
+  font-family: 'Work Sans','Helvetica',sans-serif;
+  letter-spacing: -0.3px;
+  margin: 0px;
+  color: #2b2b2b;
+}
+
+p {
+  line-height: 1.4em;
+  color: #515151;
+}
+
+a {
+  color: #fecd07;
+}
+
+
+/* NOTE: Header */
+
+.headerdesktop {
+  display: flex;
+  height: 64px;
+  align-items: center;
+  /* background-color: #f8f8f8; */
+  background-color: #fecd07;
+}
+
+.headerdesktop .logo {
+  height: 32px;
+  padding-left: 24px;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+}
+
+#logolight {
+  font-weight: 300;
+    color: black;
+}
+
+.headerdesktop h1 {
+  font-size: 1.6em;
+    color: black;
+
+}
+
+nav {
+  padding-right: 24px;
+
+}
+
+nav span {
+  padding: 0 12px 0 12px;
+    color: black;
+}
+
+nav span:hover {
+  font-weight: 600;
+}
+
+.headermobile {
+  display: none;
+}
+
+
+/* NOTE: Header Mobile */
+@media only screen and (max-width: 768px) {
+  .headerdesktop {
+    display: none;
+  }
+
+  .headermobile {
+    display: flex;
+    height: 64px;
+    align-items: center;
+    /* background-color: #f8f8f8; */
+    background-color: #fecd07;
+    justify-content:space-around;
+  }
+
+  .mobile {
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 62px;
+    width: 10px;
+  }
+}
+
+
+
+#navone {
+  background-image: url("../../images/ic-logo.svg");
+}
+
+#navtwo {
+  background-image: url("../../images/ic-on-campus.svg");
+}
+
+#navthree {
+  background-image: url("../../images/ic-online.svg");
+}
+
+#navfour {
+  background-image: url("../../images/ic-login.svg");
+}
+
+
+/* NOTE: jumbotron */
+
+.jumbotron {
+  display: flex;
+  justify-content: center;
+  background-color: #212322;
+
+}
+
+.jumbocontent {
+  display: flex;
+  width: 1400px;
+  padding: 32px 0px 32px 0px;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+.jumboimage {
+  display: flex;
+  width: 60%;
+}
+
+.jumboimage img {
+  height: 100%;
+  width: 100%;
+
+}
+
+.jumbotext {
+  height: 300px;
+  padding-left: 24px;
+  width: 350px;
+}
+
+.jumbotext h1 {
+  color: #fecd07;
+}
+
+.jumbotext h3  {
+  color: white;
+}
+
+.button {
+    text-align: center;
+    width: 320px;
+    background-color: #313131;
+    border-radius: 25px;
+    transition: background-color 0.2s ease;
+
+}
+
+.button:hover {
+  background: #fecd07;
+}
+
+.button h2:hover {
+  color: #212322;
+}
+
+.button h2 {
+  padding: 8px 0 8px 0;
+  font-size: 1.2rem;
+  align-content: center;
+  color: #fecd07;
+}
+
+/* NOTE: jumbotron mobile */
+@media only screen and (max-width: 660px) {
+
+    .jumbocontent {
+      display: block;
+      padding: 0 0 32px 0;
+    }
+
+    .jumboimage {
+        display: flex;
+        width: 100%;
+    }
+
+    .jumbotext {
+      padding-left: 16px;
+      height: auto;
+      width: auto;
+    }
+
+    .jumbotext h1 {
+      padding: 32px 0;
+      margin: 0px;
+    }
+
+    .jumbotext h3 {
+      margin: 0px;
+      padding-bottom: 24px;
+    }
+
+    .button h2 {
+      margin: 0;
+    }
+
+}
+
+/* NOTE: News Section */
+
+.news {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+
+}
+
+.newscontainer {
+  width: 1400px;
+  display: flex;
+}
+
+/* NOTE: large News */
+
+.newslarge {
+  width: 60%;
+  padding: 32px 24px 32px 24px;
+
+}
+
+.newslarge .imagereading {
+  background-image: url("../../images/information-main.jpg");
+  height: 443px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.newslargetext {
+}
+
+ #imagecaption {
+  font-size: 0.8em;
+}
+/* NOTE: List newssmall */
+
+.newslist {
+  width: 40%;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.newssmallcontainer {
+    padding: 16px;
+    height: auto;
+    display: flex;
+    align-items: center;
+
+}
+
+.newslistimage {
+  width: 35%;
+  height: auto;
+  background-size: cover;
+  min-width: 145px;
+  min-height: 145px;
+
+}
+
+.newslisttext {
+      padding-left: 16px;
+  width: 65%;
+}
+
+#one {
+    background-image: url("../../images/information-orientation.jpg");
+}
+
+#two {
+    background-image: url("../../images/information-campus.jpg");
+}
+
+#three {
+    background-image: url("../../images/information-guest-lecture.jpg");
+}
+
+@media only screen and (max-width: 768px) {
+.newslarge {
+  display: none;
+  padding: 0px;
+}
+
+.news {
+  display: flex;
+
+}
+
+.newscontainer {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 16px;
+  }
+
+.newslist {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: auto;
+}
+
+.newssmallcontainer {
+    padding: 16px;
+    height: auto;
+    display: block;
+    align-items: center;
+    width: auto;
+
+}
+
+.newslisttext {
+    width: 100%;
+
+}
+
+.newslistimage {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+
+}
+
+#one {
+    background-image: url("../../images/information-orientation-mobile.jpg");
+
+}
+
+#two {
+    background-image: url("../../images/information-campus-mobile.jpg");
+
+}
+
+#three {
+    background-image: url("../../images/information-guest-lecture-mobile.jpg");
+
+}
+
+
+
+}
+
+
+/* NOTE: Courses Section */
+.course {
+  height: auto;
+  background-color: #f2f2f2;
+  padding-bottom: 16px;
+}
+
+.course .courseheading {
+  text-align:center;
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+
+.course .courseheading h2 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 1.5em;
+}
+
+.coursecontainer {
+  height: auto;
+  padding-left: 40px;
+  padding-right: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.coursewidth {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1200px;
+}
+
+.coursesmall {
+  min-height: 300px;
+  background-color: white;
+  width: 300px;
+  margin: 16px;
+  box-shadow: 1px 1px 10px #888888;
+
+}
+
+.courseimage {
+  height: 45%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.coursetext {
+  height: auto;
+  padding: 16px;
+}
+
+.coursetext h2 {
+  margin: 0;
+}
+
+.coursetext p {
+  margin: 0;
+}
+
+#coursetype {
+  padding: 8px 0 8px 0;
+  font-size: 0.8em;
+}
+
+#courseone {
+ background-image: url("../../images/course-software.jpg");
+}
+
+#coursetwo {
+ background-image: url("../../images/course-computer-art.jpg");
+}
+
+#coursethree {
+ background-image: url("../../images/course-design.jpg");
+}
+
+#coursefour {
+ background-image: url("../../images/course-data.jpg");
+}
+
+#coursefive {
+ background-image: url("../../images/course-business.jpg");
+}
+
+#coursesix {
+ background-image: url("../../images/course-marketing.jpg");
+}
+
+.coursemobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+.course  {
+  padding-bottom: 24px;
+}
+
+
+.coursecontainer {
+  display: none;
+}
+
+.coursemobile {
+  height: auto;
+  display: block;
+  padding: 0 16px;
+
+}
+
+.coursemobilenav {
+  padding: 16px 0 24px 16px;
+  background-color: white;
+  margin-bottom: 8px;
+  box-shadow: 2px 2px 1px #dbdbdb;
+}
+
+.coursemobilenav h2 {
+  margin: 0px;
+  font-weight: 400;
+  font-size: 1.2em;
+  text-decoration: underline;
+}
+
+}
+
+
+/* NOTE: Thesis Section */
+
+.thesiscontainer {
+  height: auto;
+  background-color: #fecd07;
+}
+
+.courseheading {
+  text-align:center;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.courseheading h2 {
+  margin: 0;
+}
+
+.thesis.remixer {
+    display: flex;
+    justify-content: center;
+    height: auto;
+
+}
+
+.thesis.width {
+    width: 1400px;
+    display: flex;
+}
+
+.thesis.video {
+  width: 60%;
+  padding: 0 24px;
+}
+
+.thesis.list.container {
+  width: 40%;
+}
+
+.thesisvideotext {
+}
+
+.thesis.video .vid{
+  width: 100%;
+  height: 380px;
+      border-width: 0px;
+}
+
+.thesisblock {
+  height: auto;
+  background-color: #ffd83b;
+  display: flex;
+      padding: 16px;
+      align-items: center;
+}
+
+.thesisimg {
+  width: 35%;
+  height: auto;
+  background-size: cover;
+  min-width: 145px;
+  min-height: 145px;
+  max-width: 145px;
+  max-height: 145px;
+  margin-right: 16px;
+}
+
+.thesistxt {
+    width: 65%;
+
+}
+
+#thesisone {
+ background-image: url("../../images/thesis-fisma.jpg");
+}
+
+#thesistwo {
+ background-image: url("../../images/thesis-now-and-then.jpg");
+}
+
+.vidmobile {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .thesis.remixer {
+    display: none;
+}
+
+.thesismobile {
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.vidmobile {
+  display: block;
+  width: 100%;
+  height: 430px;
+  margin: 0px;
+  border-width: 0px;
+}
+
+}
+
+@media only screen and (max-width: 400px) {
+  .vidmobile {
+    width: 100%;
+    height: 225px;
+    margin: 0px;
+    border-width: 0px;
+  }
+}
+
+
+/* NOTE: footer */
+
+footer {
+  height: 100px;
+  display: flex;
+  padding: 0 24px;
+  align-items: center;
+  background-color: #212322;
+}
+
+footer .rightsreserved {
+  color: #5e5e5e;
+
+}
+.rightsreserved {
+  flex-grow: 1;
+}
+
+.termsprivacy a {
+  padding: 0 0.5em;
+}
+
+@media only screen and (max-width: 768px) {
+.termsprivacy {
+  display: none;
+}
+
+footer  {
+  height: auto;
+  padding-top: 24px;
+}
+
+footer p {
+  font-size: 0.8em;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+}
